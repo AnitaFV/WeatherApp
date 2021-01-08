@@ -1,0 +1,109 @@
+.head {
+  padding: 15px 0px;
+  background-color: rgb(2, 120, 174, 0.6);
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "Courier Prime", monospace;
+  border: 1px solid #51adcf;
+  color: white;
+  border-radius: 3px;
+  border-top: 0px;
+}
+body {
+  background-color: whitesmoke;
+  margin: 0px 10px 10px 30px;
+}
+.fas {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.far {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.row {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.app {
+  font-size: 14px;
+  display: block;
+}
+button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 2px solid rgb(2, 120, 174);
+  color: rgb(2, 120, 174);
+  background-color: white;
+}
+button:hover {
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(2, 120, 174);
+  transition: all 200ms ease-In-out;
+  opacity: 0.8;
+}
+.singin {
+  color: #0278ae;
+  display: block;
+  position: relative;
+  right: 0px;
+}
+.logon {
+  color: #0278ae;
+  display: block;
+  position: relative;
+  right: 0px;
+}
+.buscador {
+  position: relative;
+  margin: 30px;
+}
+.card {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.temperature {
+  font-size: 120px;
+  display: inline;
+  color: rgba(0, 0, 0, 0.562);
+}
+a {
+  color: rgba(45, 112, 167, 0.562);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  position: relative;
+  left: -12px;
+}
+.fa-cloud-sun {
+  font-size: 120px;
+  display: inline;
+  color: rgb(219, 100, 0, 0.7);
+}
+.tempsymbol {
+  display: inline;
+  font-size: 43px;
+  color: rgba(0, 0, 0, 0.493);
+}
+.col-md-4 {
+  position: relative;
+  left: 87px;
+}
+.following {
+  text-align: center;
+  position: relative;
+  display: inline;
+  padding: 0px;
+  color: rgba(0, 0, 0, 0.562);
+}
+.card-header {
+  font-weight: bold;
+}
