@@ -48,18 +48,7 @@ button:hover {
   transition: all 200ms ease-In-out;
   opacity: 0.8;
 }
-.singin {
-  color: #0278ae;
-  display: block;
-  position: relative;
-  right: 0px;
-}
-.logon {
-  color: #0278ae;
-  display: block;
-  position: relative;
-  right: 0px;
-}
+
 .buscador {
   position: relative;
   margin: 30px;
