@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://kit.fontawesome.com/5ed5adb271.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
  <style>
 
@@ -20,31 +21,25 @@
     <div class= "container">
         <div class="head">
         <div class="row">
-            <div class="col-3">
+            <div class="col-6">
                 <i class="fas fa-home"></i>
                 <div class="class app">
                  Weather App
                 </div>
             </div>
-            <div class="col-3">
-                Weather News
-            </div>
-            <div class="col-3">
-                Warnings
-            </div>
-            <div class="col-3">
-                Videos
+            <div class="col-6">
+                <a class = "News" target="_blank" href="https://www.google.com/search?biw=1280&bih=578&tbm=nws&sxsrf=ALeKk03HNG0t6GB_uO4jZpjGL-mkvuMfGg%3A1610993060342&ei=pM0FYI20FMWg1fAPwKafsAc&q=weather&oq=weather&gs_l=psy-ab.3..0l10.4794.5461.0.5811.5.5.0.0.0.0.83.384.5.5.0....0...1c.1.64.psy-ab..0.5.384....0.k0FwEhX4goY" >
+                Weather News </a>
             </div>
         </div>
         </div>
     </div>
     
-
     <form class="formBuscador" id="search-form"> 
         <input id= "inputCity" type="text" placeholder="The weather in..." autocomplete="off"> 
             <button class="Search"> Search  </button>
     </form>
-    <div class="card mb-3" style="max-width: 80%;">
+    <div class="card mb-3" style="max-width:80%">
     <div class="row g-0">
         <div class="col-md-4">
             <div class="temperature" id= "temperature">
@@ -74,7 +69,7 @@
                         Wind : None
                     </li>
                 </ul>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
             </div>
         </div>
     </div>
