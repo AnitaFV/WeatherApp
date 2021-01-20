@@ -28,17 +28,26 @@
  function convertToFahrenheit(event){
      event.preventDefault();
  let temperatureElement = document.querySelector("#temperature");
+
  let temperature = temperatureElement.innerHTML;
  temperatureElement.innerHTML = Math.round ((temperature *9)/ 5 + 32);
 
  }
  let FahrenheitLink = document.querySelector("#Fahrenheit-link");
 FahrenheitLink.addEventListener("click", convertToFahrenheit );
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#description").innerHTML = response.data.weather[0].description;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round (response.data.wind.speed);
+
+  document.querySelector("#icon").innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  
+    console.log (response.data)
 }
 
 function search(event) {

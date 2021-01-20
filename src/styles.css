@@ -63,6 +63,7 @@ button:hover {
   margin: 0 auto;
   display: block;
   font-family: "Noto Serif", serif;
+  text-transform: capitalize;
 }
 .temperature {
   font-size: 120px;

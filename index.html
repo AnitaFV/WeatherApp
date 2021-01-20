@@ -42,13 +42,14 @@
     <div class="card mb-3" style="max-width:80%">
     <div class="row g-0">
         <div class="col-md-4">
-            <div class="temperature" id= "temperature">
-            <i class="fas fa-cloud-sun"></i>
-            6</div> 
+            <div class="temperature">
+            <i  class="fas fa-cloud-sun" id ="icon"></i><span id="temperature"></span>
+            </div> 
             <div class="tempsymbol">°C </div>
                 <a href="" id= "Fahrenheit-link">(°F)</a>
             
         </div>
+
         <div class="col-md-8">
             <div class="card-body">
                 <h5 class="cities" id="city">Harrogate</h5>
@@ -56,17 +57,14 @@
                     <li id="dates">
                         Date/Hour
                     </li>
-                    <li>
+                    <li id="description">
                         Partly Cloudy 
                     </li>
-                    <li>
-                        Precipitation: 3%
+                    <li >
+                        Humidity: <span id="humidity"></span>%
                     </li>
                     <li>
-                        Humidity: 1%
-                    </li>
-                    <li>
-                        Wind : None
+                        Wind : <span id="wind"></span> Km/h
                     </li>
                 </ul>
                 
@@ -87,9 +85,7 @@
     <div class="card-header">Monday</div>
     <div class="card-body">
         <h5 class="card-title"><i class="fas fa-cloud"></i>7/9°C</h5>
-        <ul class="card-text"><li>
-            Precipitation:
-        </li>
+        <ul class="card-text">
         <li>
             Humidity:
         </li>
@@ -105,9 +101,6 @@
     <div class="card-body">
         <h5 class="card-title"><i class="fas fa-cloud-showers-heavy"></i>4/6°C</h5>
     <ul class="card-text">
-        <li>
-            Precipitation:
-        </li>
         <li>
             Humidity:
         </li>
@@ -126,9 +119,6 @@
         <h5 class="card-title"><i class="fas fa-poo-storm"></i>2/4°C</h5>
         <ul class="card-text">
         <li>
-            Precipitation:
-        </li>
-        <li>
             Humidity:
         </li>
         <li>
@@ -146,9 +136,6 @@
         <h5 class="card-title"><i class="far fa-snowflake"></i>-4/0°C</h5>
         <ul class="card-text">
             <li>
-                Precipitation:
-            </li>
-            <li>
                 Humidity:
             </li>
             <li>
@@ -165,9 +152,6 @@
     <div class="card-body">
         <h5 class="card-title"><i class="far fa-sun"></i>-4/0°C</h5>
     <ul class="card-text">
-        <li>
-            Precipitation:
-        </li>
         <li>
             Humidity:
         </li>
