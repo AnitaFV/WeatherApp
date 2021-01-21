@@ -52,44 +52,44 @@ function displayWeatherCondition(response) {
 function getIcon(icon) {
   let iconClass = "";
   if (icon === "01d") {
-    iconClass = `fal fa-sun`;
+    iconClass = `fas fa-sun`;
   } else if (icon === "01n") {
-    iconClass = `fal fa-moon-stars`;
+    iconClass = `far fa-moon`;
   } else if (icon === "02d") {
-    iconClass = `fal fa-cloud-sun`;
+    iconClass = `fas fa-cloud-sun`;
   } else if (icon === "02n") {
-    iconClass = `fal fa-moon-cloud`;
+    iconClass = `fas fa-cloud-moon`;
   } else if (icon === "03d") {
-    iconClass = `fal fa-cloud`;
+    iconClass = `fas fa-cloud`;
   } else if (icon === "03n") {
-    iconClass = `fal fa-cloud`;
+    iconClass = `fas fa-cloud`;
   } else if (icon === "04d") {
-    iconClass = `fal fa-clouds-sun`;
+    iconClass = `fas fa-cloud`;
   } else if (icon === "04n") {
-    iconClass = `fal fa-clouds-moon`;
+    iconClass = `fas fa-cloud`;
   } else if (icon === "09d") {
-    iconClass = `fal fa-cloud-showers-heavy`;
+    iconClass = `fas fa-cloud-showers-heavy`;
   } else if (icon === "09n") {
-    iconClass = `fal fa-cloud-moon-rain`;
+    iconClass = `fas fa-cloud-moon-rain`;
   } else if (icon === "10d") {
-    iconClass = `fal fa-cloud-sun-rain`;
+    iconClass = `fas fa-cloud-sun-rain`;
   } else if (icon === "10n") {
-    iconClass = `fal fa-cloud-moon-rain`;
+    iconClass = `fas fa-cloud-moon-rain`;
   } else if (icon === "11d") {
-    iconClass = `fal fa-thunderstorm-sun`;
+    iconClass = `fas fa-poo-storm`;
   } else if (icon === "11n") {
-    iconClass = `fal fa-thunderstorm-moon`;
+    iconClass = `fas fa-poo-storm`;
   } else if (icon === "13d") {
-    iconClass = `fal fa-snowflake`;
+    iconClass = `far fa-snowflake`;
   } else if (icon === "13n") {
-    iconClass = `fal fa-snowflakes`;
+    iconClass = `far fa-snowflakes`;
   } else if (icon === "50d") {
-    iconClass = `fal fa-fog`;
+    iconClass = `fas fa-smog`;
   } else if (icon === "50n") {
-    iconClass = `fal fa-fog`;
+    iconClass = `fas fa-smog`;
   }
   return iconClass;
-
+}
 function search(event) {
   event.preventDefault();
   let apiKey = "b3d3386d2b504627ac03fa173cbc37ca";
@@ -99,6 +99,7 @@ function search(event) {
 
   console.log(apiUrl);
 }
+
 console.log(axios);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
