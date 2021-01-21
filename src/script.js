@@ -24,7 +24,6 @@
 
  console.log (day)
 
- 
  function convertToFahrenheit(event){
      event.preventDefault();
  let temperatureElement = document.querySelector("#temperature");
@@ -44,11 +43,52 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML = response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round (response.data.wind.speed);
-
-  document.querySelector("#icon").innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  
+  document.querySelector("#icon").innerHTML = `<i class="${getIcon(
+    response.data.weather[0].icon
+  )}"></i>`;
     console.log (response.data)
 }
+
+function getIcon(icon) {
+  let iconClass = "";
+  if (icon === "01d") {
+    iconClass = `fal fa-sun`;
+  } else if (icon === "01n") {
+    iconClass = `fal fa-moon-stars`;
+  } else if (icon === "02d") {
+    iconClass = `fal fa-cloud-sun`;
+  } else if (icon === "02n") {
+    iconClass = `fal fa-moon-cloud`;
+  } else if (icon === "03d") {
+    iconClass = `fal fa-cloud`;
+  } else if (icon === "03n") {
+    iconClass = `fal fa-cloud`;
+  } else if (icon === "04d") {
+    iconClass = `fal fa-clouds-sun`;
+  } else if (icon === "04n") {
+    iconClass = `fal fa-clouds-moon`;
+  } else if (icon === "09d") {
+    iconClass = `fal fa-cloud-showers-heavy`;
+  } else if (icon === "09n") {
+    iconClass = `fal fa-cloud-moon-rain`;
+  } else if (icon === "10d") {
+    iconClass = `fal fa-cloud-sun-rain`;
+  } else if (icon === "10n") {
+    iconClass = `fal fa-cloud-moon-rain`;
+  } else if (icon === "11d") {
+    iconClass = `fal fa-thunderstorm-sun`;
+  } else if (icon === "11n") {
+    iconClass = `fal fa-thunderstorm-moon`;
+  } else if (icon === "13d") {
+    iconClass = `fal fa-snowflake`;
+  } else if (icon === "13n") {
+    iconClass = `fal fa-snowflakes`;
+  } else if (icon === "50d") {
+    iconClass = `fal fa-fog`;
+  } else if (icon === "50n") {
+    iconClass = `fal fa-fog`;
+  }
+  return iconClass;
 
 function search(event) {
   event.preventDefault();
