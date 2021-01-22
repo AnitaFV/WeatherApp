@@ -111,7 +111,7 @@ function displayForecast(response)
 
   for (let index =0 ; index<6; index++){
  let forecast = response.data.list[index];
- forecastElement.innerHTML = `
+ forecastElement.innerHTML += `
   <div class="card border-info mb-3" >
     <div class="card-header">${formatHours(forecast.dt*1000)}</div>
     <div class="card-body">
