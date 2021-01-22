@@ -16,10 +16,9 @@ body {
 }
 
 .icon {
-  display: block;
-  font-size: 25px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  font-size: 120px;
+  display: inline;
+  color: rgb(219, 100, 0, 0.7);
 }
 .far {
   display: block;
@@ -66,7 +65,7 @@ button:hover {
   text-transform: capitalize;
 }
 .temperature {
-  font-size: 120px;
+  font-size: 110px;
   display: inline;
   color: rgba(0, 0, 0, 0.562);
   font-family: "Noto Serif", serif;
