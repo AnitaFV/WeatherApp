@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <a class = "News" target="_blank" href="https://www.google.com/search?biw=1280&bih=578&tbm=nws&sxsrf=ALeKk03HNG0t6GB_uO4jZpjGL-mkvuMfGg%3A1610993060342&ei=pM0FYI20FMWg1fAPwKafsAc&q=weather&oq=weather&gs_l=psy-ab.3..0l10.4794.5461.0.5811.5.5.0.0.0.0.83.384.5.5.0....0...1c.1.64.psy-ab..0.5.384....0.k0FwEhX4goY" >
+                <a class = "news" target="_blank" href="https://www.google.com/search?biw=1280&bih=578&tbm=nws&sxsrf=ALeKk03HNG0t6GB_uO4jZpjGL-mkvuMfGg%3A1610993060342&ei=pM0FYI20FMWg1fAPwKafsAc&q=weather&oq=weather&gs_l=psy-ab.3..0l10.4794.5461.0.5811.5.5.0.0.0.0.83.384.5.5.0....0...1c.1.64.psy-ab..0.5.384....0.k0FwEhX4goY" >
                 Weather News </a>
             </div>
         </div>
@@ -45,9 +45,9 @@
             <div class="temperature">
             <i  class="icon" id ="icon"></i><span id="temperature"></span>
             </div> 
-            <div class="tempsymbol">°C </div>
-                <a href="" id= "Fahrenheit-link">(°F)</a>
-            
+            <div class="tempsymbol"><a href="" id="celsius-link" class="active">°C</a> <span>|</span>
+                <a href="" id= "fahrenheit-link">°F</a></span>
+            </div>
         </div>
 
         <div class="col-md-8">
@@ -82,7 +82,7 @@
      
             <div class="col-2" id="forecast">
 <div class="card border-info mb-3">
-    <div class="card-header">Hours</div>
+    <div class="card-header">Forecast</div>
     <div class="card-body">
         <h5 class="card-title"><i class="fas fa-cloud" id= "forecastIcon"></i>7/9°C</h5>
         <ul class="card-text">
@@ -99,7 +99,9 @@
 </div>
 </div>
 <footer>
-    Coded by Ana Belen Fernandez
+    <a class="ews" target="_blank"
+        href="https://github.com/AnitaFV/WeatherApp">
+        Coded</a> by Ana Belen Fernandez
 </footer>
 <script src="src/script.js">    
    

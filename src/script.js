@@ -24,16 +24,30 @@
 
  console.log (day)
 
- function convertToFahrenheit(event){
-     event.preventDefault();
- let temperatureElement = document.querySelector("#temperature");
-
- let temperature = temperatureElement.innerHTML;
- temperatureElement.innerHTML = Math.round ((temperature *9)/ 5 + 32);
-
+// Fahrenheit- celsius //
+ function displayFahrenheitTemperature (event) {
+   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+   let fahrenheitTemperature =(celsiusTemperature * 9/5) + 32;
+   let temperatureElement = document.querySelector("#temperature");
+   temperatureElement.innerHTML = Math.round(fahrenheitTemperature)
  }
- let FahrenheitLink = document.querySelector("#Fahrenheit-link");
-FahrenheitLink.addEventListener("click", convertToFahrenheit );
+
+ function displayCelsiusTemperature(event){
+    event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+ }
+ let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature );
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature );
+
+let celsiusTemperature = null;
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -46,6 +60,9 @@ function displayWeatherCondition(response) {
   document.querySelector("#icon").innerHTML = `<i class="${getIcon(
     response.data.weather[0].icon
   )}"></i>`;
+  celsiusTemperature =Math.round(
+    response.data.main.temp
+  );
     console.log (response.data)
 }
 
@@ -119,12 +136,15 @@ function displayForecast(response)
         <h5 class="card-title"><i class="${getIcon(forecast.weather[0].icon
   )}"></i> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</h5>
         <ul class="card-text">
+        <li> ${forecast.weather[0].main}
+        </li>
         <li>
             Humidity: ${forecast.main.humidity}%
         </li>
         <li>
             Wind:${forecast.wind.speed} Km/h
-        </li></ul>
+        </li>
+        </ul>
     </div>
 </div>`;
   }

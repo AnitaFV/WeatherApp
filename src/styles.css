@@ -13,6 +13,7 @@
 body {
   background-color: whitesmoke;
   margin: 0px 10px 10px 30px;
+  max-width: 100%;
 }
 .icon {
   font-size: 90px;
@@ -68,8 +69,12 @@ button:hover {
   font-family: "Noto Serif", serif;
   padding-left: 0%;
 }
-a {
+.news {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a {
+  color: rgba(0, 0, 255, 0.699);
   text-decoration: none;
 }
 ul {
@@ -79,7 +84,7 @@ ul {
 }
 .tempsymbol {
   display: inline;
-  font-size: 43px;
+  font-size: 30px;
   color: rgba(0, 0, 0, 0.493);
 }
 .col-md-4 {
@@ -104,4 +109,12 @@ h3 {
 .col-2 {
   display: contents;
   min-width: 20%;
+  padding: 10px;
+}
+.tempsymbol .active {
+  color: black;
+  cursor: default;
+}
+.tempsymbol .active :hover {
+  text-decoration: none;
 }
