@@ -14,17 +14,10 @@ body {
   background-color: whitesmoke;
   margin: 0px 10px 10px 30px;
 }
-
 .icon {
-  font-size: 120px;
+  font-size: 90px;
   display: inline;
   color: rgb(219, 100, 0, 0.7);
-}
-.far {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
 }
 .row {
   padding-right: 0px;
@@ -64,8 +57,11 @@ button:hover {
   font-family: "Noto Serif", serif;
   text-transform: capitalize;
 }
+.forecast {
+  background-color: crimson;
+}
 .temperature {
-  font-size: 110px;
+  font-size: 90px;
   display: inline;
   color: rgba(0, 0, 0, 0.562);
   font-family: "Noto Serif", serif;
@@ -78,11 +74,6 @@ ul {
   list-style: none;
   position: relative;
   left: -12px;
-}
-.fa-cloud-sun {
-  font-size: 120px;
-  display: inline;
-  color: rgb(219, 100, 0, 0.7);
 }
 .tempsymbol {
   display: inline;
@@ -106,7 +97,4 @@ ul {
 }
 h3 {
   font-family: "Noto Serif", serif;
-}
-.col-2 {
-  min-width: 200px;
 }
