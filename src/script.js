@@ -176,6 +176,9 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+let currentLocationButton = document.querySelector("#currentLocationButton");
+currentLocationButton.addEventListener("click", getCurrentLocation); 
+
 function search(event) {
   event.preventDefault();
   let apiKey = "b3d3386d2b504627ac03fa173cbc37ca";
