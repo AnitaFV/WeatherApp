@@ -110,7 +110,7 @@ function displayForecast(response)
   let forecastElement = document.querySelector("#forecast");
  forecastElement.innerHTML = null;
 
-  for (let index =0 ; index<6; index++){
+  for (let index =0 ; index<5; index++){
  let forecast = response.data.list[index];
  forecastElement.innerHTML += `
   <div class="card border-info mb-3" >
