@@ -16,7 +16,7 @@ body {
   max-width: 100%;
 }
 .icon {
-  font-size: 90px;
+  font-size: 80px;
   display: inline;
   color: rgb(219, 100, 0, 0.7);
 }
@@ -63,7 +63,7 @@ button:hover {
   background-color: crimson;
 }
 .temperature {
-  font-size: 90px;
+  font-size: 80px;
   display: inline;
   color: rgba(0, 0, 0, 0.562);
   font-family: "Noto Serif", serif;
@@ -84,7 +84,7 @@ ul {
 }
 .tempsymbol {
   display: inline;
-  font-size: 30px;
+  font-size: 25px;
   color: rgba(0, 0, 0, 0.493);
 }
 .col-md-4 {
